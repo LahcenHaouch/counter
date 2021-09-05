@@ -1,19 +1,24 @@
+:root {
+  --primary-color: #272822;
+  --secondary-color: white;
+}
+
 html {
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #272822;
+  background: var(--primary-color);
 }
 
 body, button {
   font-family: 'Redressed', cursive;
-  color: white;
+  color: var(--secondary-color);
 }
 
 button {
   cursor: pointer;
-  color: #272822;
+  color: var(--primary-color);
   font-size: 2rem;
 }
 
