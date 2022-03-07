@@ -8,23 +8,18 @@ const getElement = (selector) => document.querySelector(selector)
 const decreaseButton = getElement(decreaseId)
 const resetButton = getElement(resetId)
 const increaseButton = getElement(increaseId)
+const counter = getElement(counterId)
 
 getElement(counterId).textContent = 0
 
 decreaseButton.addEventListener('click', () => {
-  const counter = getElement(counterId)
-
   counter.textContent = counter.textContent - 1
 })
 
 resetButton.addEventListener('click', () => {
-  const counter = getElement(counterId)
-
   counter.textContent = 0
 })
 
 increaseButton.addEventListener('click', () => {
-  const counter = getElement(counterId)
-
   counter.textContent = parseInt(counter.textContent, 10) + 1
 })
