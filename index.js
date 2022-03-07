@@ -10,7 +10,7 @@ const resetButton = getElement(resetId)
 const increaseButton = getElement(increaseId)
 const counter = getElement(counterId)
 
-getElement(counterId).textContent = 0
+counter.textContent = 0
 
 decreaseButton.addEventListener('click', () => {
   counter.textContent = counter.textContent - 1
