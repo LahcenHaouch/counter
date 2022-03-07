@@ -3,8 +3,16 @@
   --secondary-color: white;
 }
 
-html {
-  height: 100%;
+body,html {
+  margin: 0;
+  padding: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,10 +30,14 @@ button {
   font-size: 2rem;
 }
 
+h1 {
+  margin-bottom: 16px;
+}
+
 .header-container {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .button-container {
@@ -33,6 +45,6 @@ button {
 }
 
 #reset {
-  margin-left: 20px;
-  margin-right: 20px
+  margin-left: 24px;
+  margin-right: 24px
 }
